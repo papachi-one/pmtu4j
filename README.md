@@ -1,5 +1,23 @@
 # PMTU4j
 MTU discovery Java library.
+## Supported platforms
+- Windows
+- Linux
+- macOS
+## How it works
+Library runs `ping` command in the background with IP flag set to `Don't fragment`.
+```shell
+# Windows
+ping papachi.one -f -n 1 -w 500 -l 1500
+```
+```shell
+# Linux
+ping papachi.one -M do -c 1 -W 0.5 -s 1500
+```
+```shell
+# macOS
+ping papachi.one -D -c 1 -W 0.5 -s 1500
+```
 ## Sample code
 ### Example #1
 ```java
