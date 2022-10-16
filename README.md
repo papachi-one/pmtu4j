@@ -1,5 +1,5 @@
 # PMTU4j
-MTU discovery Java library.
+Cross-platform MTU discovery Java library.
 ## Supported platforms
 - Windows
 - Linux
